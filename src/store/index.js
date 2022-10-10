@@ -8,7 +8,6 @@ const storeData = {
     Post,
   },
 };
-
 const store = new Vuex.Store(storeData);
 
 export default store;

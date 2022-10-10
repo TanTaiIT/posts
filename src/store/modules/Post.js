@@ -1,6 +1,5 @@
 import axios from "@/api/server";
 import { API_KEY } from "@/constant/constant";
-// import axios from "axios";
 const TodoModule = {
   state: {
     postList: [],
@@ -32,7 +31,7 @@ const TodoModule = {
     },
     async getPostByCategory({ commit }, category) {
       const response = await axios.get(
-        `https://newsapi.org/v2/top-headlines?country=de&category=${category}&apiKey=a7cb2d7d7fb945bba65cf5871d5a6303`
+        `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=a7cb2d7d7fb945bba65cf5871d5a6303`
       );
       commit("getPostCategory", response.data.articles);
     },
