@@ -1,0 +1,159 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+
+  //   width: 1728px;
+  height: 60px;
+
+  background: #3295ab;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    // width: 801px;
+    height: 60px;
+
+    background: #d9d9d9;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      gap: 10px;
+
+      width: 114px;
+      height: 60px;
+
+      background: #3295ab;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      align-self: stretch;
+      flex-grow: 0;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #2db7d6;
+        cursor: pointer;
+      }
+      a {
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 1px;
+      }
+      &__dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+
+        position: absolute;
+        width: 1020px;
+        height: 235px;
+        left: 131px;
+        top: 60px;
+
+        background: #ffffff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        z-index: 2;
+        &__item {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 0px;
+
+          width: 1000px;
+          height: 35px;
+
+          background: #ffffff;
+
+          /* Inside auto layout */
+
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          &__first {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 10px;
+            gap: 10px;
+
+            width: 200px;
+            height: 35px;
+
+            background: #ffffff;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            h5 {
+              width: 62px;
+              height: 15px;
+
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 15px;
+              /* identical to box height */
+
+              color: #000000;
+
+              /* Inside auto layout */
+
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    input {
+      color:#fff;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      padding: 2px 4px;
+      background-color: inherit;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}
